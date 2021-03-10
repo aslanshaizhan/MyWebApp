@@ -1,1 +1,6 @@
-<p>section works!</p>
+<div class="container" [ngSwitch]="count">
+  <h4>Counter of researches:</h4>
+  <ng-template ngSwitchCase="1"><p>First case: {{count * 10}}</p></ng-template>
+  <ng-template ngSwitchCase="2"><p>Second case: {{count * 20}}</p></ng-template>
+  <ng-template ngSwitchDefault><p>Default case: {{count * 100}}</p></ng-template>
+</div>

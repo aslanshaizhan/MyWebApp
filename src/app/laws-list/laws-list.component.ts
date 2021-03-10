@@ -8,8 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class LawsListComponent implements OnInit {
 
   constructor() { }
-  public new = '';
-  public name = 'New Law  ';
 
   ngOnInit(): void {
   }

@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  dol: number = 433;
+  eu: number = 493;
+  rub: number = 5.6;
+
   constructor() { }
 
   ngOnInit(): void {

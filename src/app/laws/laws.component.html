@@ -1,4 +1,24 @@
-<app-header></app-header>
+<div class="container">
+<h2>Общие положения</h2>
+<h4>Закон РК от 26.12.12 г. № 61-V «О внесении изменений и дополнений в некоторые законодательные акты
+    Республики Казахстан по вопросам налогообложения»</h4>
+<table>
+  <thead>
+  <tr>
+    <th>№ п/п</th>
+    <th>Структурный элемент</th>
+    <th>Предпалагаемая редакция</th>
+    <th>Обоснование</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let law of data">
+    <td>{{law.number}}</td>
+    <td>{{law.element}}</td>
+    <td>{{law.reduction}}</td>
+    <td>{{law.prove}}</td>
+  </tr>
+  </tbody>
+</table>
+  </div>
 <app-laws-list></app-laws-list>
-<p>laws works!</p>
-<app-footer></app-footer>

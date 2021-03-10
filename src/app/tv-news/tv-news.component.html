@@ -1,4 +1,9 @@
-<app-header></app-header>
+<div *ngIf="displayHeader; then thenBlock; else elseBlock"></div>
+  <ng-template #thenBlock>
+    <h2>Welcome to TV News</h2>
+  </ng-template>
+<ng-template #elseBlock>
+<h2>Header is Hidden</h2>
+</ng-template>
 <app-video-tv></app-video-tv>
-<p>tv-news works!</p>
-<app-footer></app-footer>
+

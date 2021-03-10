@@ -11,7 +11,7 @@ export const routes: Routes = [
   {path: 'news-mix', component: NewsMixComponent},
   {path: 'tv-news', component: TvNewsComponent},
   {path: 'laws', component: LawsComponent},
-  {path: '', redirectTo: 'mainNews', pathMatch: 'full'},
+  {path: '', redirectTo: 'news', pathMatch: 'full'},
   {path: '**', component: ErrorComponent}
 ];
 

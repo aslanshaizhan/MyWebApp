@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TvNewsComponent implements OnInit {
 
+  displayHeader = true;
   constructor() { }
 
   ngOnInit(): void {

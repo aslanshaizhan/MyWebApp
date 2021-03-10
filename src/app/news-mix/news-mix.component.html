@@ -1,24 +1,19 @@
-<app-header></app-header>
 <div class="container">
-  {{new}}
   <h2>Tengri Mix</h2>
   <p>Интересные новости в любое время!</p>
   <div class="gallery">
-    <router-outlet></router-outlet>
     <a href="/app/1.jpg" target="_blank">
       <img src="/app/1.jpg" alt = "Man of Kind" style="width:100%">
     </a>
     <div class="desc">Мужчина пожертвовал 20 миллионов долларов университету, в котором не смог доучиться</div>
   </div>
   <div class="gallery">
-    <router-outlet></router-outlet>
     <a href="/app/2.png" target="_blank">
       <img src="/app/2.png" alt = "Real" style="width:100%">
     </a>
     <div class="desc">"40 минут без пульса". Мужчину спасли после остановки сердца</div>
   </div>
   <div class="gallery">
-    <router-outlet></router-outlet>
     <a href="/app/3.jpg" target="_blank">
       <img src="/app/3.jpg" alt = "Make" style="width:100%">
     </a>
@@ -26,4 +21,11 @@
       во время прыжка с парашютом</div>
   </div>
 </div>
-<app-footer></app-footer>
+<br>
+<div class="container">
+<p [ngStyle]="{'color': colorValue}">Tenge to : <input type="text" [(ngModel)]="tenge"/>
+  Euro : {{tenge | currencyConverter:'Eu'}} </p>
+<p [ngStyle]="{'color': colorValue1}">Euro to : <input type="text" [(ngModel)]="euro"/>
+  Tenge : {{euro | currencyConverter:'Tg'}}
+</p>
+</div>

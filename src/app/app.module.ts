@@ -15,6 +15,9 @@ import { LawsComponent } from './laws/laws.component';
 import {RouterModule} from '@angular/router';
 import {routes} from './app-routing.module';
 import { ErrorComponent } from './error/error.component';
+import { ContainerComponent } from './container/container.component';
+import {CurrencyConverterPipe} from './pipe/currencyConverter';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,12 +31,15 @@ import { ErrorComponent } from './error/error.component';
     TvNewsComponent,
     LawsListComponent,
     LawsComponent,
-    ErrorComponent
+    ErrorComponent,
+    ContainerComponent,
+    CurrencyConverterPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(routes),
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

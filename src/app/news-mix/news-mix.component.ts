@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./news-mix.component.scss']
 })
 export class NewsMixComponent implements OnInit {
+  tenge: any;
+  euro: any;
+
+  colorValue = 'blue';
+  colorValue1 = 'red';
 
   constructor() { }
-  public new = '';
-  public name = 'Tengri News';
 
   ngOnInit(): void {
   }
