@@ -1,16 +1,12 @@
 <div class="container">
-  <h1>Select the section of law</h1>
-  <p>The select the section is used to create a drop-down list.</p>
-  <form action="/action_page.php">
-    <label for="laws">Choose a section of law:</label>
-    <select name="laws" id="laws">
-      <option value="section1">Section 1</option>
-      <option value="section2">Section 2</option>
-      <option value="section3">Section 3</option>
-      <option value="section4">Section 4</option>
-    </select>
-    <br><br>
-    <input type="submit" value="Submit">
-  </form>
-  <p>Click to see the sections of law!</p>
+  <h1>Click to get laws</h1>
+  <button type="button" (click)="getLaws()">
+    Get laws
+  </button>
+  <h3>There are list of laws:</h3>
+  <div *ngFor="let law of lawList">
+    <p>
+      Name of law: {{law.name}}, Item: {{law.item}}
+    </p>
+  </div>
 </div>

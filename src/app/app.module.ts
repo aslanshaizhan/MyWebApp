@@ -18,6 +18,8 @@ import { ErrorComponent } from './error/error.component';
 import { ContainerComponent } from './container/container.component';
 import {CurrencyConverterPipe} from './pipe/currencyConverter';
 import {FormsModule} from '@angular/forms';
+import {LawService} from './services/law.service';
+import {LoggingService} from './services/logging.service';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,7 @@ import {FormsModule} from '@angular/forms';
     RouterModule.forRoot(routes),
     FormsModule,
   ],
-  providers: [],
+  providers: [LawService, LoggingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
