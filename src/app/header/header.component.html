@@ -1,17 +1,13 @@
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      xmlns="http://www.w3.org/1999/html">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" aria-current="page" routerLink="/news">TengriNews</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li><a aria-current="page" routerLink="/news-mix">TengriMix</a></li>
-      <li><a aria-current="page" routerLink="/tv-news">TengriTV</a></li>
-      <li><a aria-current="page" routerLink="/laws">Laws</a></li>
-    </ul>
+  <div class="topnav">
+    <a routerLink= "/news">TengriNews</a>
+    <a routerLink="/news-mix">TengriMix</a>
+    <a routerLink="/tv-news">TengriTV</a>
+    <a routerLink="/laws">Laws</a>
     <form class="navbar-form navbar-left" action="/action_page.php">
       <div class="input-group">
         <input type="text" class="form-control" placeholder="Search" name="search">
@@ -22,10 +18,10 @@
         </div>
       </div>
     </form>
-    <ul class="nav navbar-nav">
-      <li><p>Dollar: {{dol | currency:'':'symbol'}}</p></li><br>
-      <li><p>Euro: {{eu | currency:'EUR':'symbol'}}</p></li>
-    </ul>
+    <p style="float: right">Dollar: {{dol | currency:'':'symbol'}} | Euro: {{eu | currency:'EUR':'symbol'}}</p>
   </div>
-</nav>
+
+
+
+
 

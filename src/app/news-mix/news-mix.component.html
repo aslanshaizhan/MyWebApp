@@ -1,31 +1,54 @@
-<div class="container">
-  <h2>Tengri Mix</h2>
-  <p>Интересные новости в любое время!</p>
-  <div class="gallery">
-    <a href="/app/1.jpg" target="_blank">
-      <img src="/app/1.jpg" alt = "Man of Kind" style="width:100%">
-    </a>
-    <div class="desc">Мужчина пожертвовал 20 миллионов долларов университету, в котором не смог доучиться</div>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <div class="container">
+        <h2>Tengri Mix</h2>
+        <p>Интересные новости в любое время!</p>
+        <div class="gallery">
+            <img src="/../../assets/9.jpeg" alt = "Man of Kind" style="width:100%">
+          <div class="desc">Мужчина пожертвовал 20 миллионов долларов университету, в котором не смог доучиться</div>
+        </div>
+        <div class="gallery">
+            <img src="/../../assets/10.jpeg" alt = "Real" style="width:100%">
+          <div class="desc">"40 минут без пульса". Мужчину спасли после остановки сердца</div>
+        </div>
+        <div class="gallery">
+            <img src="/../../assets/11.jpg" alt = "Make" style="width:100%">
+          <div class="desc">"Выпрыгнул из самолета с кольцом в зубах". Мужчина удивил свою девушку
+            во время прыжка с парашютом</div>
+        </div>
+      </div>
+      </div>
+    <div class="card" style="background-color: goldenrod">
+      <h2>Tengri Mix</h2>
+      <h5>#Статьи | #Интервью | #Экономика | #Культура</h5>
+      <div class="fakeimg">
+        <img src="/../../assets/4.jpeg" alt = "Snow" style="width:100%">
+      </div>
+      <p>Казахстанская журналистка Акмарал Баталова специально для Tengrinews.kz взяла эксклюзивное интервью у министра обороны Российской Федерации Сергея Шойгу. Отвечая на вопросы для нашего портала, он поделился мнением об отношениях России и Казахстана, идее создания "туранской армии" и действиях США.</p>
+      <p>Не буду скрывать, что и сегодня в Сирии на оперативном, на тактическом уровне у нас очень тесные контакты с американскими коллегами. Может быть, если это для кого-то секрет, я его открываю, этот секрет. У нас на уровне наших, по гражданскому назову, управленцев в воздушном пространстве и ведению работы в воздухе по борьбе с терроризмом по нескольку раз в день бывают контакты.</p>
+    </div>
   </div>
-  <div class="gallery">
-    <a href="/app/2.png" target="_blank">
-      <img src="/app/2.png" alt = "Real" style="width:100%">
-    </a>
-    <div class="desc">"40 минут без пульса". Мужчину спасли после остановки сердца</div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Популярное</h2>
+      <div class="fakeimg1">
+        <img src="/../../assets/5.png" alt = "Snow" style="width:100%">
+      </div>
+      <p>Чиновников наказали за незаконную выдачу квартир в Жезказгане</p>
+    </div>
+    <div class="card">
+      <h3>Узнай</h3>
+      <div class="fakeimg1"><img src="/../../assets/6.jpg" alt = "Snow" style="width:100%"></div>
+      <div class="fakeimg1"><img src="/../../assets/7.jpg" alt = "Snow" style="width:100%"></div>
+      <div class="fakeimg1"><img src="/../../assets/8.jpg" alt = "Snow" style="width:100%"></div>
+    </div>
+    <div style="background-color: limegreen" class="card">
+      <p [ngStyle]="{'color': colorValue}">Tenge to : <input type="text" [(ngModel)]="tenge"/><br>
+        Euro : {{tenge | currencyConverter:'Eu'}} </p>
+      <p [ngStyle]="{'color': colorValue1}">Euro to : <input type="text" [(ngModel)]="euro"/><br>
+        Tenge : {{euro | currencyConverter:'Tg'}}
+      </p>
+    </div>
   </div>
-  <div class="gallery">
-    <a href="/app/3.jpg" target="_blank">
-      <img src="/app/3.jpg" alt = "Make" style="width:100%">
-    </a>
-    <div class="desc">"Выпрыгнул из самолета с кольцом в зубах". Мужчина удивил свою девушку
-      во время прыжка с парашютом</div>
-  </div>
-</div>
-<br>
-<div class="container">
-<p [ngStyle]="{'color': colorValue}">Tenge to : <input type="text" [(ngModel)]="tenge"/>
-  Euro : {{tenge | currencyConverter:'Eu'}} </p>
-<p [ngStyle]="{'color': colorValue1}">Euro to : <input type="text" [(ngModel)]="euro"/>
-  Tenge : {{euro | currencyConverter:'Tg'}}
-</p>
 </div>

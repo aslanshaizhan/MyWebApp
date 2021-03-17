@@ -1,24 +1,56 @@
-<div class="container">
-<h2>Общие положения</h2>
-<h4>Закон РК от 26.12.12 г. № 61-V «О внесении изменений и дополнений в некоторые законодательные акты
-    Республики Казахстан по вопросам налогообложения»</h4>
-<table>
-  <thead>
-  <tr>
-    <th>№ п/п</th>
-    <th>Структурный элемент</th>
-    <th>Предпалагаемая редакция</th>
-    <th>Обоснование</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr *ngFor="let law of data">
-    <td>{{law.number}}</td>
-    <td>{{law.element}}</td>
-    <td>{{law.reduction}}</td>
-    <td>{{law.prove}}</td>
-  </tr>
-  </tbody>
-</table>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <div class="container">
+        <h2>Общие положения</h2>
+        <h4>Закон РК от 26.12.12 г. № 61-V «О внесении изменений и дополнений в некоторые законодательные акты
+          Республики Казахстан по вопросам налогообложения»</h4>
+        <table>
+          <thead>
+          <tr>
+            <th>№ п/п</th>
+            <th>Структурный элемент</th>
+            <th>Предпалагаемая редакция</th>
+            <th>Обоснование</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let law of data">
+            <td>{{law.number}}</td>
+            <td>{{law.element}}</td>
+            <td>{{law.reduction}}</td>
+            <td>{{law.prove}}</td>
+          </tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+    <div class="card">
+      <h2>Почитай</h2>
+      <h5>#Статьи | #Интервью | #Экономика | #Культура</h5>
+      <app-laws-list></app-laws-list>
+    </div>
   </div>
-<app-laws-list></app-laws-list>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Популярное</h2>
+      <div class="fakeimg1">
+        <img src="/../../assets/5.png" alt = "Snow" style="width:100%">
+      </div>
+      <p>Чиновников наказали за незаконную выдачу квартир в Жезказгане</p>
+    </div>
+    <div class="card">
+      <h3>Узнай</h3>
+      <div class="fakeimg1"><img src="/../../assets/6.jpg" alt = "Snow" style="width:100%"></div>
+      <div class="fakeimg1"><img src="/../../assets/7.jpg" alt = "Snow" style="width:100%"></div>
+      <div class="fakeimg1"><img src="/../../assets/8.jpg" alt = "Snow" style="width:100%"></div>
+    </div>
+    <div style="background-color: limegreen" class="card">
+      <app-section></app-section>
+    </div>
+  </div>
+
+
+
+
+

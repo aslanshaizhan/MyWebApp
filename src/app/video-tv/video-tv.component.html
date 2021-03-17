@@ -1,22 +1,44 @@
-<div class="container">
-  <h2>Новости</h2>
-  <h2>Программы:</h2>
-  <p>05.03 19:00 Опера «Шелковая лестница» Дж.Россини |
-    06.03 18:00 Балет «Лебединое озеро» П.Чайковский |
-    07.03 18:00 Балет «Лебединое озеро» П.Чайковский </p>
-  <div class="gallery">
-    <iframe width="180" height="180" src="https://youtu.be/DNIlO_h-DVQ?playlist=DNIlO_h-DVQ&loop=1">
-    </iframe>
-    <div class="desc">"Спите!" Как и. о. министра торговли и интеграции Ержан Казанбаев к депутатам приходил</div>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <div class="container">
+        <h2>Опера «Шелковая лестница» Дж.Россини</h2>
+        <video controls (click)="toggleVideo()" id="videoPlayer">
+          <source src="https://youtu.be/DNIlO_h-DVQ" type="video/mp4" />
+          Browser not supported
+        </video>
+        </div>
+      </div>
+    <div class="card">
+      <h2>Опера «Шелковая лестница» Дж.Россини</h2>
+      <video controls (click)="toggleVideo()" id="videoPlayer1">
+        <source src="https://youtu.be/zaW5sXJNKGE" type="video/mp4" />
+        Browser not supported
+      </video>
+    </div>
+  <div class="card">
+    <h2>Опера «Шелковая лестница» Дж.Россини</h2>
+    <video controls (click)="toggleVideo()" id="videoPlayer2">
+      <source src="https://youtu.be/Q-sYFKAnyTc" type="video/mp4" />
+      Browser not supported
+    </video>
   </div>
-  <div class="gallery">
-    <iframe width="180" height="180" src="https://youtu.be/zaW5sXJNKGE?playlist=zaW5sXJNKGE&loop=1">
-    </iframe>
-    <div class="desc">Бекшин и вице-министры привились от коронавируса. Как это было</div>
   </div>
-  <div class="gallery">
-    <iframe width="180" height="180" src="https://youtu.be/Q-sYFKAnyTc?playlist=zaW5sXJNKGE&loop=1">
-    </iframe>
-    <div class="desc">Почему в аэропортах нельзя брать чужие посылки и конверты</div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Популярное</h2>
+      <div class="fakeimg1">
+        <img src="/../../assets/5.png" alt = "Snow" style="width:100%">
+      </div>
+      <p>Чиновников наказали за незаконную выдачу квартир в Жезказгане</p>
+    </div>
+    <div class="card">
+      <h3>Узнай</h3>
+      <div class="fakeimg1"><img src="/../../assets/6.jpg" alt = "Snow" style="width:100%"></div>
+      <div class="fakeimg1"><img src="/../../assets/7.jpg" alt = "Snow" style="width:100%"></div>
+      <div class="fakeimg1"><img src="/../../assets/8.jpg" alt = "Snow" style="width:100%"></div>
+    </div>
+    <div style="background-color: limegreen" class="card">
+      <app-section></app-section>
+    </div>
   </div>
-</div>

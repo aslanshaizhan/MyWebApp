@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 
 @Component({
   selector: 'app-video-tv',
@@ -7,7 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VideoTvComponent implements OnInit {
 
-  constructor() { }
+  @ViewChild('videoPlayer') videoplayer: any;
+  @ViewChild('videoPlayer1') videoplayer1: any;
+  @ViewChild('videoPlayer2') videoplayer2: any;
+
+  // tslint:disable-next-line:typedef
+  toggleVideo() {
+    this.videoplayer.play();
+    this.videoplayer1.play();
+    this.videoplayer2.play();
+  }
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
