@@ -1,0 +1,27 @@
+<h1 style="text-align:center">
+  Admin Login
+</h1>
+<div class="login">
+  <h2 class="login-header">Log in</h2>
+  <form [formGroup]="adminForm" class="login-container" (ngSubmit)="login()">
+
+    <p [ngClass]="{ 'has-error': isSubmitted}">
+    <input type="login" placeholder="Login" formControlName="login">
+    </p>
+
+    <div *ngIf="isSubmitted" class="help-block">
+    <div *ngIf="formControls.login">Login is required</div>
+    </div>
+
+    <p [ngClass]="{ 'has-error': isSubmitted}">
+    <input type="password" placeholder="Password" formControlName="password">
+    </p>
+
+    <div *ngIf="isSubmitted" class="help-block">
+      <div *ngIf="formControls.password">Password is required</div>
+    </div>
+
+    <input type="submit" value="Log in">
+
+  </form>
+</div>

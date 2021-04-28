@@ -17,9 +17,13 @@ import {routes} from './app-routing.module';
 import { ErrorComponent } from './error/error.component';
 import { ContainerComponent } from './container/container.component';
 import {CurrencyConverterPipe} from './pipe/currencyConverter';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {LawService} from './services/law.service';
 import {LoggingService} from './services/logging.service';
+import { AdminComponent } from './admin/admin.component';
+import { AdminLoginComponent } from './admin-login/admin-login.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ArticleComponent } from './article/article.component';
 
 @NgModule({
   declarations: [
@@ -35,13 +39,18 @@ import {LoggingService} from './services/logging.service';
     LawsComponent,
     ErrorComponent,
     ContainerComponent,
-    CurrencyConverterPipe
+    CurrencyConverterPipe,
+    AdminComponent,
+    AdminLoginComponent,
+    ArticleComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(routes),
     FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [LawService, LoggingService],
   bootstrap: [AppComponent]

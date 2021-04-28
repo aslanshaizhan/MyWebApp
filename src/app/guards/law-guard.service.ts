@@ -6,8 +6,7 @@ import {LawService} from '../services/law.service';
 export class LawGuardService implements CanActivate {
   private lawService: any;
 
-  constructor(private router: Router,
-              private lawService: LawService) {}
+  constructor(private router: Router) {}
 
   canActivate(route: ActivatedRouteSnapshot,
               state: RouterStateSnapshot): boolean {

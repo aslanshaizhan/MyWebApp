@@ -1,0 +1,34 @@
+{
+  "Articles": [
+    {
+      "id": 1,
+      "name": "One Way ticket",
+      "issuedBy": "Ren Newer",
+      "issuedDate": "02-02-2020"
+    },
+    {
+      "id": 2,
+      "name": "Nitin Koily",
+      "issuedBy": "Rana",
+      "issuedDate": "25-12-2019"
+    },
+    {
+      "id": 3,
+      "name": "Katy Parry",
+      "issuedBy": "Aman Askar",
+      "issuedDate": "23-03-2018"
+    },
+    {
+      "id": 4,
+      "name": "Kazakhstan steppe",
+      "issuedBy": "Aslan Askar",
+      "issuedDate": "01-01-2021"
+    },
+    {
+      "id": 5,
+      "name": "Kazakh Nation",
+      "issuedBy": "Aslan Aslan",
+      "issuedDate": "05-05-2019"
+    }
+  ]
+}

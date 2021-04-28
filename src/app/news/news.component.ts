@@ -7,14 +7,17 @@ import {Component, OnInit, Output, EventEmitter} from '@angular/core';
 })
 export class NewsComponent implements OnInit {
 
-  constructor() { }
-  @Output() public childEvent = new EventEmitter();
+  constructor(){}
 
-  ngOnInit(): void {
-  }
+  @Output() public childEvent = new EventEmitter();
 
   // tslint:disable-next-line:typedef
   sendData() {
     this.childEvent.emit();
   }
+
+  // tslint:disable-next-line:typedef
+  ngOnInit() {
+  }
 }
+

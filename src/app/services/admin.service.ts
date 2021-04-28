@@ -1,33 +1,31 @@
-import {Injectable} from '@angular/core';
-import {LoggingService} from './logging.service';
-import {HttpClient, HttpParams} from '@angular/common/http';
-import {Observable, of} from 'rxjs/index';
-import {Admin} from '../admin';
+import { Injectable } from '@angular/core';
+import { Admin } from '../admin';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class AdminService {
 
-  baseUrl = 'http://localhost:4200/api';
 
-  constructor(
-    private loggingService: LoggingService,
-    private httpClient: HttpClient) {
+  constructor() { }
+
+
+  // tslint:disable-next-line:typedef
+  public login(userInfo: Admin){
+    localStorage.setItem('ACCESS_TOKEN', 'access_token');
   }
 
-  isLoggedIn(): boolean {
-    return true;
+
+  // tslint:disable-next-line:typedef
+  public isLoggedIn(){
+    return localStorage.getItem('ACCESS_TOKEN') !== null;
+
+
   }
 
-  getAdmins(params: HttpParams): Observable<Admin[]> {
-    let adminList: Admin[];
-    adminList = [
-      new Admin(1, 'Mark01', '123456'),
-      new Admin(2, 'Tom02', '123456'),
-      new Admin(3, 'Bob03', '123456')
-    ];
 
-    this.loggingService.log('List of admins: ' + adminList);
-
-    return of(adminList);
+  // tslint:disable-next-line:typedef
+  public logout(){
+    localStorage.removeItem('ACCESS_TOKEN');
   }
 }
